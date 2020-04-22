@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WGU Tracker</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_term">Courses</string>
+    <string name="title_activity_main">Terms</string>
+    <string name="title_activity_course">Assessments</string>
+</resources>
