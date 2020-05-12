@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="3"
+        android:title="Delete"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/notifications"
+        android:orderInCategory="4"
+        android:title="Notifications"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sharing"
+        android:orderInCategory="5"
+        android:title="Sharing"
+        app:showAsAction="never" />
+
+
+</menu>

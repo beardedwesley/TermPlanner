@@ -24,42 +24,48 @@
 
     <TextView
         android:id="@+id/termStartDate"
+        style="@android:style/TextAppearance.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@android:style/TextAppearance.Large"
-        android:text="Start date"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:singleLine="true"
+        android:text="Start date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/termTitle" />
 
     <TextView
         android:id="@+id/termEndDate"
+        style="@android:style/TextAppearance.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@android:style/TextAppearance.Large"
-        android:text="End date (automatic)"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:singleLine="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/termStartDate" />
+        android:text="End date (automatic)"
+        app:layout_constraintStart_toEndOf="@+id/termStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/termTitle" />
 
     <Button
         android:id="@+id/termSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="21dp"
         android:text="Save"
         app:layout_constraintBottom_toTopOf="@+id/courseListView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/termStartDate"
-        app:layout_constraintTop_toBottomOf="@+id/termTitle" />
+        app:layout_constraintHorizontal_bias="0.669"
+        app:layout_constraintStart_toEndOf="@+id/termEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/termTitle"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/courseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:text="Course List"
