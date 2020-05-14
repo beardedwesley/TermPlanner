@@ -88,8 +88,9 @@ public class AssessmentActivity extends AppCompatActivity {
             String aName = assessmentName.getText().toString();
             int aCourseID = getIntent().getIntExtra("courseID", -1);
             AssessType assessType;
-            if (objectiveButton.isSelected()) {
+            if (objectiveButton.isChecked()) {
                 assessType = AssessType.OBJECTIVE;
+                //Toast.makeText(getApplicationContext(), assessType.toString(), Toast.LENGTH_SHORT).show();
             } else {
                 assessType = AssessType.PERFORMANCE;
             }

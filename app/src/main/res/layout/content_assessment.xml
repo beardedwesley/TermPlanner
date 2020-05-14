@@ -26,6 +26,7 @@
         android:id="@+id/typeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:ems="14"
         android:text="Type"
         android:textAlignment="center"
@@ -57,9 +58,10 @@
 
     <TextView
         android:id="@+id/assessmentGoalDate"
+        style="@android:style/TextAppearance.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@android:style/TextAppearance.Large"
+        android:layout_marginTop="5dp"
         android:text="Goal/Scheduled Date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -68,6 +70,7 @@
         android:id="@+id/assessmentNotes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:ems="14"
         android:gravity="start|top"
         android:hint="Notes"
@@ -82,7 +85,7 @@
         android:text="Save"
         app:layout_constraintBottom_toTopOf="@+id/assessmentNotes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/assessmentGoalDate"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/assessmentName" />
 
 

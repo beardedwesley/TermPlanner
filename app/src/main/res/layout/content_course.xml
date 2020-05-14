@@ -23,20 +23,22 @@
 
     <TextView
         android:id="@+id/courseStartDate"
+        style="@android:style/TextAppearance.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@android:style/TextAppearance.Large"
+        android:layout_marginTop="5dp"
         android:text="Start date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/courseName" />
 
     <TextView
         android:id="@+id/courseGoalDate"
+        style="@android:style/TextAppearance.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@android:style/TextAppearance.Large"
-        android:text="Goal finish date"
+        android:layout_marginTop="5dp"
         android:singleLine="true"
+        android:text="Goal finish date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/courseStartDate" />
 
@@ -44,6 +46,7 @@
         android:id="@+id/courseStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:ems="14"
         android:hint="Status (e.g. In Progress)"
         android:inputType="textPersonName"
@@ -56,15 +59,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
-        app:layout_constraintBottom_toBottomOf="@+id/courseStatus"
+        app:layout_constraintBottom_toTopOf="@+id/courseStatus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/courseStartDate"
+        app:layout_constraintStart_toEndOf="@+id/courseGoalDate"
         app:layout_constraintTop_toBottomOf="@+id/courseName" />
 
     <EditText
         android:id="@+id/courseContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:ems="14"
         android:hint="Instructor name/contact"
         android:inputType="textPersonName"
@@ -75,6 +79,7 @@
         android:id="@+id/courseNotes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:ems="14"
         android:gravity="start|top"
         android:hint="Notes"
